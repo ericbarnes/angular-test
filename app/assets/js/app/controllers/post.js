@@ -1,5 +1,5 @@
 var PostCtrl = function($scope, $stateParams) {
-    debugger;
+    console.log("test", $scope.posts);
     $scope.postId = $stateParams.postId;
 };
 

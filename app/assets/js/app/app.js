@@ -21,10 +21,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
             controller: require('./controllers/posts')
         })
         .state('posts.details', {
-            url: "/:postId",
-            template: "WUT? Why U No WORK?",
-//            templateUrl: "views/post-form.html",
+            url: "/posts/:postId",
+            templateUrl: "views/post-form.html",
             controller: require('./controllers/post')
         })
 });
-
