@@ -20,9 +20,14 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: "views/posts.html",
             controller: require('./controllers/posts')
         })
+        .state('posts.list', {
+            url: "/posts/list",
+            templateUrl: "views/posts-list.html",
+            controller: require('./controllers/posts')
+        })
         .state('posts.details', {
             url: "/posts/:postId",
             templateUrl: "views/post-form.html",
             controller: require('./controllers/post')
-        })
+        });
 });

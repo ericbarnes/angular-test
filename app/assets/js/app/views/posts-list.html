@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <th>ID</th>
+        <th>TITLE</th>
+    </tr>
+    <tr ng-repeat="post in posts">
+        <td>{{ post.id }}</td>
+        <td>
+            <a ui-sref="posts.details({postId:post.id})">{{ post.title }}</a>
+        </td>
+    </tr>
+</table>
